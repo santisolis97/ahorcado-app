@@ -91,13 +91,12 @@ function App() {
       setCount(prevCount => prevCount + 1);
     } else {
       // Update the placeholder to reveal the guessed letter
-      setPlaceholder(prevPlaceholder =>
-        word
-          .split('')
-          .map(letter =>
-            guessedLetters.includes(letter) ? letter : guessedLetter === letter ? letter : '_'
-          )
-          .join('')
+      setPlaceholder(word
+        .split('')
+        .map(letter =>
+          guessedLetters.includes(letter) ? letter : guessedLetter === letter ? letter : '_'
+        )
+        .join('')
       );
     }
 
