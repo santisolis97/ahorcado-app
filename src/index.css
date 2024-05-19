@@ -1,10 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  @apply text-gray-200;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #1a1a1a;
-  max-height: 100dvh;
+  height: 100dvh;
+
 }
 
 #root {
-  max-height: 100dvh;
+  height: 100dvh;
+  background-color: rgb(17 24 39);
 }

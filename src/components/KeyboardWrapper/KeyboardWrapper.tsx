@@ -10,7 +10,7 @@ export const KeyboardWrapper = ({ onLetterClick, guessedLetters }: KeyboardWrapp
 
     console.log(guessedLetters)
     return (
-        <div style={{
+        <div className='text-gray-800' style={{
             position: 'absolute',
             bottom: 0,
             left: 0,

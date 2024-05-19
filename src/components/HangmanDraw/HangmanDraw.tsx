@@ -1,10 +1,10 @@
-import './Hangman.css'
+import './HangmanDraw.css'
 
 type HangmanProps = {
   lostLives: number, // Change lostLifes to lostLives
 }
 
-export const Hangman = ({ lostLives }: HangmanProps) => {
+export const HangmanDraw = ({ lostLives }: HangmanProps) => {
   return (
     <div className="hangman-container">
       <div className="pole">
