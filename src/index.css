@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1a1a1a;
+  max-height: 100dvh;
+}
+
+#root {
+  max-height: 100dvh;
+}

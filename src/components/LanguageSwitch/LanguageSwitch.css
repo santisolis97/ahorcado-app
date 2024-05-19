@@ -1,0 +1,50 @@
+.LanguageSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.LanguageSwitch button {
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: #7bec71;
+    border-color: #085c00;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: left 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    /* Make the text unselectable */
+    outline: none;
+    /* Remove focus outline */
+}
+
+.LanguageSwitch button:hover,
+.LanguageSwitch button:focus {
+    background-color: #7bec71;
+    /* Keep the same background color */
+    border-color: #085c00;
+    /* Keep the same border color */
+}
+
+
+.LanguageSwitch div {
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    /* Make the text unselectable */
+}

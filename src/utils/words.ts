@@ -1,0 +1,58 @@
+type Word = {
+    spanish: string;
+    english: string;
+    spanishHint: string;
+    englishHint: string;
+}
+
+export const hangmanWords: Array<Word> = [
+    { spanish: 'gato', english: 'cat', spanishHint: 'animal doméstico', englishHint: 'domestic animal' },
+    { spanish: 'perro', english: 'dog', spanishHint: 'animal doméstico', englishHint: 'domestic animal' },
+    { spanish: 'casa', english: 'house', spanishHint: 'lugar de residencia', englishHint: 'place of residence' },
+    { spanish: 'libro', english: 'book', spanishHint: 'objeto para leer', englishHint: 'object for reading' },
+    { spanish: 'mesa', english: 'table', spanishHint: 'mueble para comer', englishHint: 'furniture for eating' },
+    { spanish: 'silla', english: 'chair', spanishHint: 'mueble para sentarse', englishHint: 'furniture for sitting' },
+    { spanish: 'agua', english: 'water', spanishHint: 'líquido incoloro e insípido', englishHint: 'colorless, tasteless liquid' },
+    { spanish: 'fuego', english: 'fire', spanishHint: 'energía luminosa y calorífica', englishHint: 'light and heat energy' },
+    { spanish: 'tierra', english: 'earth', spanishHint: 'planeta en el que vivimos', englishHint: 'planet we live on' },
+    { spanish: 'aire', english: 'air', spanishHint: 'mezcla de gases que respiramos', englishHint: 'mixture of gases we breathe' },
+    { spanish: 'sol', english: 'sun', spanishHint: 'estrella alrededor de la cual giramos', englishHint: 'star around which we revolve' },
+    { spanish: 'luna', english: 'moon', spanishHint: 'satélite natural de la Tierra', englishHint: 'natural satellite of Earth' },
+    { spanish: 'estrella', english: 'star', spanishHint: 'objeto celeste luminoso', englishHint: 'luminous celestial object' },
+    { spanish: 'cielo', english: 'sky', spanishHint: 'esfera celeste visible desde la Tierra', englishHint: 'celestial sphere visible from Earth' },
+    { spanish: 'mar', english: 'sea', spanishHint: 'extensión de agua salada', englishHint: 'body of saltwater' },
+    { spanish: 'río', english: 'river', spanishHint: 'curso natural de agua dulce', englishHint: 'natural freshwater course' },
+    { spanish: 'montaña', english: 'mountain', spanishHint: 'elevación natural del terreno', englishHint: 'natural elevation of land' },
+    { spanish: 'bosque', english: 'forest', spanishHint: 'área extensa con árboles', englishHint: 'large area with trees' },
+    { spanish: 'árbol', english: 'tree', spanishHint: 'planta perenne con tronco', englishHint: 'perennial plant with trunk' },
+    { spanish: 'flor', english: 'flower', spanishHint: 'estructura reproductiva de las plantas', englishHint: 'reproductive structure of plants' },
+    { spanish: 'pájaro', english: 'bird', spanishHint: 'animal volador con plumas', englishHint: 'flying animal with feathers' },
+    { spanish: 'pez', english: 'fish', spanishHint: 'animal acuático con aletas', englishHint: 'aquatic animal with fins' },
+    { spanish: 'ciudad', english: 'city', spanishHint: 'área urbana densamente poblada', englishHint: 'densely populated urban area' },
+    { spanish: 'pueblo', english: 'town', spanishHint: 'asentamiento humano más pequeño que una ciudad', englishHint: 'smaller human settlement than a city' },
+    { spanish: 'coche', english: 'car', spanishHint: 'vehículo motorizado de transporte', englishHint: 'motorized transportation vehicle' },
+    { spanish: 'tren', english: 'train', spanishHint: 'medio de transporte ferroviario', englishHint: 'railway transportation means' },
+    { spanish: 'avión', english: 'plane', spanishHint: 'vehículo aéreo de transporte', englishHint: 'air transportation vehicle' },
+    { spanish: 'puerta', english: 'door', spanishHint: 'entrada y salida de un recinto', englishHint: 'entrance and exit of an enclosure' },
+    { spanish: 'ventana', english: 'window', spanishHint: 'abertura en una pared para iluminar', englishHint: 'opening in a wall for illumination' },
+    { spanish: 'pared', english: 'wall', spanishHint: 'estructura vertical que separa espacios', englishHint: 'vertical structure that separates spaces' },
+    { spanish: 'techo', english: 'ceiling', spanishHint: 'parte superior de una habitación', englishHint: 'top part of a room' },
+    { spanish: 'piso', english: 'floor', spanishHint: 'superficie horizontal de un edificio', englishHint: 'horizontal surface of a building' },
+    { spanish: 'comida', english: 'food', spanishHint: 'sustancia nutritiva que se ingiere', englishHint: 'nutritious substance that is ingested' },
+    { spanish: 'bebida', english: 'drink', spanishHint: 'líquido para beber', englishHint: 'liquid for drinking' },
+    { spanish: 'fruta', english: 'fruit', spanishHint: 'producto comestible de plantas', englishHint: 'edible product of plants' },
+    { spanish: 'verdura', english: 'vegetable', spanishHint: 'planta comestible cultivada', englishHint: 'cultivated edible plant' },
+    { spanish: 'carne', english: 'meat', spanishHint: 'tejido animal comestible', englishHint: 'edible animal tissue' },
+    { spanish: 'pan', english: 'bread', spanishHint: 'alimento hecho de harina', englishHint: 'food made from flour' },
+    { spanish: 'leche', english: 'milk', spanishHint: 'líquido producido por las glándulas mamarias', englishHint: 'liquid produced by mammary glands' },
+    { spanish: 'queso', english: 'cheese', spanishHint: 'producto lácteo sólido', englishHint: 'solid dairy product' },
+    { spanish: 'huevo', english: 'egg', spanishHint: 'producto de las aves', englishHint: 'product of birds' },
+    { spanish: 'azúcar', english: 'sugar', spanishHint: 'compuesto dulce cristalino', englishHint: 'sweet crystalline compound' },
+    { spanish: 'sal', english: 'salt', spanishHint: 'condimento mineral', englishHint: 'mineral condiment' },
+    { spanish: 'pimienta', english: 'pepper', spanishHint: 'especia picante', englishHint: 'spicy spice' },
+    { spanish: 'mantequilla', english: 'butter', spanishHint: 'producto lácteo untuoso', englishHint: 'smooth dairy product' },
+    { spanish: 'aceite', english: 'oil', spanishHint: 'líquido graso extraído de plantas', englishHint: 'fatty liquid extracted from plants' },
+    { spanish: 'vinagre', english: 'vinegar', spanishHint: 'líquido ácido de fermentación', englishHint: 'acidic liquid from fermentation' },
+    { spanish: 'jardín', english: 'garden', spanishHint: 'área de plantas cultivadas', englishHint: 'area of cultivated plants' },
+    { spanish: 'camino', english: 'path', spanishHint: 'sendero o ruta', englishHint: 'trail or route' }
+];

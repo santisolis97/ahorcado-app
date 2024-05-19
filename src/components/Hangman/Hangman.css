@@ -1,0 +1,98 @@
+.hangman-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pole {
+  position: relative;
+  width: 10px;
+  height: 200px;
+  background-color: white;
+  transform: translate(40px, 0);
+}
+
+.beam {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 100px;
+  height: 10px;
+  background-color: white;
+}
+
+.rope {
+  position: absolute;
+  top: 10px;
+  left: -100px;
+  width: 5px;
+  height: 30px;
+  background-color: white;
+}
+
+.body {
+  position: relative;
+  top: 30px;
+  left: -97.5px;
+  width: 0;
+  height: 0;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.torso {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 4px;
+  height: 40px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: white;
+}
+
+.left-arm {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  transform-origin: top left;
+}
+
+.right-arm {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: top right;
+}
+
+.left-leg {
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: top left;
+}
+
+.right-leg {
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  transform-origin: top right;
+}
